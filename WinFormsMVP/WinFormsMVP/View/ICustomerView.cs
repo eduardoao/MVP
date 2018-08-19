@@ -14,6 +14,8 @@ namespace WinFormsMVP.View
 
         string Phone { get; set; }
 
+        string Email { get; set; }
+
         Presenter.CustomerPresenter Presenter { set; }
     }
 }

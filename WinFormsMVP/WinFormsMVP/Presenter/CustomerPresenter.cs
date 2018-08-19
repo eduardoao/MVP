@@ -34,11 +34,12 @@ namespace WinFormsMVP.Presenter
             _view.CustomerName = customer.Name;
             _view.Address = customer.Address;
             _view.Phone = customer.Phone;
+            _view.Email = customer.Email;
         }
 
         public void SaveCustomer()
         {
-            Customer customer = new Customer { Name = _view.CustomerName, Address = _view.Address, Phone = _view.Phone};
+            Customer customer = new Customer { Name = _view.CustomerName, Address = _view.Address, Phone = _view.Phone, Email = _view.Email};
             _repository.SaveCustomer(_view.SelectedCustomer, customer);
             UpdateCustomerListView();
         }

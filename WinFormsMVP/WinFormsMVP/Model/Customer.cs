@@ -9,6 +9,8 @@
 
         public string Phone { get; set; }
 
+        public string Email { get; set; }
+
         public override bool Equals(object obj)
         {
             Customer other = obj as Customer;

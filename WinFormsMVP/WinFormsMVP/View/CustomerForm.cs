@@ -43,6 +43,13 @@ namespace WinFormsMVP.View
             set { this.phoneTextBox.Text = value; }
         }
 
+        public string Email
+        {
+            get { return emailTextBox.Text; }
+            set { emailTextBox.Text = value; }
+        }
+
+        
         public Presenter.CustomerPresenter Presenter
         { private get; set; }
 

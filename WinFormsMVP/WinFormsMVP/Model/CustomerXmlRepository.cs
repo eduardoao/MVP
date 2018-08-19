@@ -30,9 +30,9 @@ namespace WinFormsMVP.Model
         private void CreateCustomerXmlStub()
         {
             var stubCustomerList = new List<Customer> {
-                new Customer {Name = "Joe", Address = "Nowhere, TX 1023", Phone = "123-456"},
-                new Customer {Name = "Jane", Address = "Nowhere, AZ 1026", Phone = "124-456"},
-                new Customer {Name = "Steve", Address = "Nowhere, UT 1005", Phone = "125-456"}
+                new Customer {Name = "Joe", Address = "Nowhere, TX 1023", Phone = "123-456", Email ="joe@gmail.com"},
+                new Customer {Name = "Jane", Address = "Nowhere, AZ 1026", Phone = "124-456", Email= "Jnae@gmail.com"},
+                new Customer {Name = "Steve", Address = "Nowhere, UT 1005", Phone = "125-456", Email="steve@gmail.com"}
             };
             SaveCustomerList(stubCustomerList);
         }
